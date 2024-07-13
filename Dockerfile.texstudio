@@ -1,14 +1,1 @@
-FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y \ 
-#helps manage packages
-software-properties-common \  
-#wget helps download files from the web
-wget \
-#gnupg2 helps with signing and verifying files
-gnupg2 \
-#latex editors
-texstudio \
-texlive-full \
-#ensures only specified packages are installed
---no-install-recommends
